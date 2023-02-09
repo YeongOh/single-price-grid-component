@@ -1,0 +1,189 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Cyan: hsl(179, 62%, 43%)
+- Bright Yellow: hsl(71, 73%, 54%)
+
+### Neutral
+
+- Light Gray: hsl(204, 43%, 93%)
+- Grayish Blue: hsl(218, 22%, 67%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 16px
+
+### Font
+
+- Family: [Karla](https://fonts.google.com/specimen/Karla)
+- Weights: 400, 700 */
+
+:root {
+  --color-primary-cyan: hsl(179, 62%, 43%);
+  --color-primary-light-cyan: hsl(179, 47%, 51%);
+  --color-primary-bright-yellow: hsl(71, 73%, 54%);
+  --color-primary-bright-yellow-hover: hsl(71, 62%, 47%);
+  --color-netural-light-gray: hsl(204, 43%, 93%);
+  --color-neutral-gray-blue: hsl(218, 22%, 67%);
+  --section-padding: 1.5rem;
+}
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+  background-color: var(--color-neutral-gray-blue);
+  color: var(--color-netural-light-gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 20rem;
+  border-radius: 0.3rem;
+  overflow: hidden;
+}
+
+.card__join {
+  background-color: white;
+  padding: var(--section-padding);
+}
+
+h1 {
+  color: var(--color-primary-cyan);
+  font-size: 1.3em;
+  margin-bottom: 1.2rem;
+}
+
+.card__join__guarantee {
+  color: var(--color-primary-bright-yellow);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.card__join > p {
+  color: var(--color-neutral-gray-blue);
+  line-height: 1.8;
+  font-size: 0.9rem;
+}
+
+.card__signup {
+  background-color: var(--color-primary-cyan);
+  padding: var(--section-padding);
+}
+
+.card__signup > h2 {
+  font-size: 1.2rem;
+  margin-top: 0;
+}
+
+.card__signup__price {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.6rem;
+}
+
+.card__signup__price__number {
+  font-size: 1.9rem;
+  font-weight: 700;
+  margin-right: 0.6rem;
+}
+
+.card__signup__price__desc {
+  opacity: 0.8;
+}
+
+.card__signup__btn {
+  margin-top: 1.7rem;
+  padding: 0.9em;
+  width: 100%;
+  border: transparent;
+  border-radius: 0.3rem;
+  color: white;
+  background-color: var(--color-primary-bright-yellow);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  cursor: pointer;
+}
+
+.card__signup__btn:hover {
+  background-color: var(--color-primary-bright-yellow-hover);
+  transition: all 0.15s ease-in-out;
+}
+
+.card__whyus {
+  padding: var(--section-padding);
+  background-color: var(--color-primary-light-cyan);
+}
+
+.card__whyus > h2 {
+  font-size: 1.1rem;
+  margin-top: 0;
+  margin-bottom: 1.2rem;
+}
+
+.card__whyus > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  color: var(--color-netural-light-gray);
+  opacity: 0.8;
+  font-size: 0.9rem;
+}
+
+@media screen and (min-width: 600px) {
+  :root {
+    --section-padding: 2.5rem;
+  }
+
+  .card {
+    flex-direction: row;
+    max-width: 40rem;
+    flex-wrap: wrap;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    margin-top: 0rem;
+  }
+
+  .card__join__guarantee {
+    font-size: 1.1rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .card__join > p {
+    color: var(--color-neutral-gray-blue);
+    line-height: 1.8;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .card__signup {
+    width: 50%;
+  }
+
+  .card__whyus {
+    width: 50%;
+  }
+}
