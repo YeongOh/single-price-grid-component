@@ -47,7 +47,7 @@ The designs were created to the following widths:
 
 body {
   font-family: 'Karla', sans-serif;
-  background-color: var(--color-neutral-gray-blue);
+  background-color: var(--color-netural-light-gray);
   color: var(--color-netural-light-gray);
   display: flex;
   justify-content: center;
